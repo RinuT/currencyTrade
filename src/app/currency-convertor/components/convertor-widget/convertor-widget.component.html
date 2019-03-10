@@ -1,0 +1,19 @@
+
+<br><br><br><br>
+<div class="container">
+<form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Enter the Amount</label>
+    <input type="search" class="form-control" name="amount" [(ngModel)]="amount" placeholder="Amount">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Choose the currency</label>
+    <select class="form-control" name="currency" [(ngModel)]="selectedCurrency" (change)="sendConvertData()">
+      <option value="">Choose Currency</option>      
+      <option *ngFor="let currency of currencies" [ngValue]="currency">{{currency.name}}</option>      
+    </select>
+  </div>
+
+
+</form>
+</div>
