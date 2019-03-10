@@ -1,0 +1,6 @@
+@media only screen and (max-device-width: 360px) {
+	input[type="search"]::-webkit-search-cancel-button {
+			-webkit-appearance: searchfield-cancel-button;
+		}
+
+}
